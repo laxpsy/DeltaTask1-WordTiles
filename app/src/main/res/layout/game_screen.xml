@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameScreenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinkgrad"
+    android:padding="16dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wordView"
+        style="@style/textView"
+        android:background="@drawable/word_game_bg"
+        android:letterSpacing="0.4"
+        android:text="________________"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/flow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728"></com.google.android.material.textview.MaterialTextView>
+
+    <GridLayout
+        android:id="@+id/flow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:gravity="center"
+        android:padding="16dp"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but1"
+            style="@style/GameTiles" /> <!-- gameTile1 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but2"
+            style="@style/GameTiles" /> <!-- gameTile2 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but3"
+            style="@style/GameTiles" /> <!-- gameTile3 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but4"
+            style="@style/GameTiles" /> <!-- gameTile4 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but5"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile5 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but6"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile6 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but7"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile7 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but8"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile8 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but9"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile9 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but10"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="462dp" /> <!-- gameTile10 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but11"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="462dp" /> <!-- gameTile11 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but12"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile12 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but13"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile13 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but14"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile14 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but15"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile15 -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but16"
+            style="@style/GameTiles"
+            tools:ignore="MissingConstraints" /> <!-- gameTile16 -->
+
+    </GridLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetbutt"
+        style="@style/AppButtons"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow2"
+        app:layout_constraintVertical_bias="0.543"
+        app:strokeColor="@color/teal">
+
+    </com.google.android.material.button.MaterialButton> <!-- reset -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/checkbutt"
+        style="@style/AppButtons"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/resetbutt"
+        app:layout_constraintTop_toBottomOf="@+id/flow2"
+        app:layout_constraintVertical_bias="0.554"
+        app:strokeColor="@color/teal">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <ImageView
+        android:id="@+id/life3"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/wordView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/originalheart" />
+
+    <ImageView
+        android:id="@+id/life2"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/wordView"
+        app:layout_constraintStart_toEndOf="@+id/life3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/originalheart" />
+
+    <ImageView
+        android:id="@+id/life1"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/wordView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/life2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/originalheart" />
+
+    <ImageView
+        android:id="@+id/clueButton"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/wordView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/life2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@drawable/clue" /> <!-- check -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

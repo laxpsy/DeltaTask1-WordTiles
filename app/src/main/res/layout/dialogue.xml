@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/clueBg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/clue_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/ActualClueText"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clue"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/clueBg"
+        app:layout_constraintEnd_toEndOf="@id/clueBg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/clueBg"
+        app:layout_constraintTop_toBottomOf="@id/CLUELABEL"
+        app:layout_constraintVertical_bias="0.12"></TextView>
+
+    <TextView
+        android:id="@+id/CLUELABEL"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clue"
+        app:layout_constraintBottom_toBottomOf="@id/clueBg"
+        app:layout_constraintEnd_toEndOf="@id/clueBg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/clueBg"
+        app:layout_constraintTop_toTopOf="@id/clueBg"
+        app:layout_constraintVertical_bias="0.05"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/AppButtons"
+        android:id="@+id/clueStartButton"
+        app:strokeWidth="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/clueBg"
+        app:layout_constraintEnd_toEndOf="@id/clueBg"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/clueBg"
+        app:layout_constraintTop_toBottomOf="@id/ActualClueText"
+        app:layout_constraintVertical_bias="1.0"
+        app:cornerRadius="16dp"
+        android:text="START"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

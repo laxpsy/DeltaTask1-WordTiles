@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DeltaTask1</string>
+    <string name="clue">Clue</string>
+    <string name="word">Word</string>
+    <string name="start">Start</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/clueBg"
+        android:layout_width="347dp"
+        android:layout_height="261dp"
+        android:background="@drawable/gameover_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"></ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playAgainButt"
+        style="@style/AppButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="PLAY AGAIN"
+        android:textSize="20dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clueBg"
+        app:layout_constraintEnd_toEndOf="@+id/clueBg"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="@+id/clueBg"
+        app:layout_constraintTop_toBottomOf="@+id/gameOver"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeWidth="0dp"
+        android:paddingHorizontal="5dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitButt"
+        style="@style/AppButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="EXIT"
+        android:textSize="20dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clueBg"
+        app:layout_constraintEnd_toEndOf="@+id/clueBg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/playAgainButt"
+        app:layout_constraintTop_toBottomOf="@+id/gameOver"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeWidth="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="114dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/clueBg"
+        app:layout_constraintTop_toTopOf="@+id/clueBg"
+        app:srcCompat="@drawable/crownline"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="114dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        app:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/clueBg"
+        app:layout_constraintTop_toTopOf="@+id/clueBg"
+        app:srcCompat="@drawable/crownline" />
+
+    <ImageView
+        android:id="@+id/crown2"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/crown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clueBg"
+        app:tint="@color/black"></ImageView>
+
+    <TextView
+        style="@style/textView"
+        android:id="@+id/gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/crown2"
+        app:layout_constraintStart_toStartOf="@id/clueBg"
+        app:layout_constraintEnd_toEndOf="@id/clueBg"
+        android:text="GAME OVER"/>
+
+    <TextView
+        android:id="@+id/scoreText"
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@id/clueBg"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/clueBg"
+        app:layout_constraintTop_toBottomOf="@id/gameOver" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
